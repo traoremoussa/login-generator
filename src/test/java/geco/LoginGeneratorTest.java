@@ -20,7 +20,7 @@ public class LoginGeneratorTest {
     }
 
     @Test
-    public void generateLoginForNomAndPrenom() {
+    public void testGenerateLoginForNomAndPrenom() {
         String nom="Durand";
         String prenom="Paul";
        // String message=loginGenerator.generateLoginForNomAndPrenom(nom,prenom);
@@ -28,6 +28,11 @@ public class LoginGeneratorTest {
         Assert.assertTrue(
                 loginGenerator.generateLoginForNomAndPrenom(nom,prenom).compareTo("PDUR")==0);
         loginService.addLogin("PDUR");
+
+        nom="Ralling";
+        prenom="John";
+        Assert.assertTrue(loginGenerator.generateLoginForNomAndPrenom(nom,prenom),
+                loginGenerator.generateLoginForNomAndPrenom(nom,prenom).equals("JRAL2"));
 
     }
 }
