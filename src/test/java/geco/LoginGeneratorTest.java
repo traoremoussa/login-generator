@@ -33,6 +33,12 @@ public class LoginGeneratorTest {
         prenom="John";
         Assert.assertTrue(loginGenerator.generateLoginForNomAndPrenom(nom,prenom),
                 loginGenerator.generateLoginForNomAndPrenom(nom,prenom).equals("JRAL2"));
+        nom="Durand";
+         prenom="Paul";
+
+        Assert.assertTrue(
+                loginGenerator.generateLoginForNomAndPrenom(nom,prenom).compareTo("PDUR2")==0);
+
 
     }
 }
