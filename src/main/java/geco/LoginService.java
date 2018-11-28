@@ -37,6 +37,7 @@ public class LoginService {
      * @param login le login a ajouter
      */
     public void addLogin(String login) {
+        int i=0;
         loginsExistants.add(login);
     }
 
