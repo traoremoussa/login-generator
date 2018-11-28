@@ -43,7 +43,7 @@ public class LoginGeneratorTest {
         prenom="Paul";
         Assert.assertTrue(
                 loginGenerator.generateLoginForNomAndPrenom(nom,prenom).compareTo("PDU")==0);
-        loginService.addLogin("PDU");
+        loginService.addLogin("PDU ");
     }
 
 
